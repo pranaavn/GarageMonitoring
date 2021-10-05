@@ -5,3 +5,5 @@ Monitoring entrances to a house is key for safety. Most standard houses use alar
 Using only a low-cost ESP Microprocessor and a bluetooth beacon, this project aims to solve this issue in an accessible way.
 
 Presentation of primary components: https://docs.google.com/presentation/d/1W_Gj4mmGI37sbpLe8FZXNkh5qJL8ZnENnBcXSSq-JtQ/edit?usp=sharing
+
+*Imported from Arduino IDE and Pycharm
