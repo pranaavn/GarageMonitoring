@@ -6,4 +6,4 @@ Using only a low-cost ESP Microprocessor and a bluetooth beacon, this project ai
 
 Presentation of primary components: https://docs.google.com/presentation/d/1W_Gj4mmGI37sbpLe8FZXNkh5qJL8ZnENnBcXSSq-JtQ/edit?usp=sharing
 
-*Imported from Arduino IDE and Pycharm
+*Imported from Arduino IDE and Pycharm IDE
