@@ -6,4 +6,5 @@ git clone https://github.com/pranaavn/GarageMonitoring nautilus
 
 3. sudo apt install python3-pip
 
-4. Temp
+4. pip3 install Flask
+
