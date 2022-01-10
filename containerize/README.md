@@ -8,3 +8,5 @@ git clone https://github.com/pranaavn/GarageMonitoring nautilus
 
 4. pip3 install Flask
 
+5. Test
+
