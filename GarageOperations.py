@@ -60,17 +60,17 @@ def webservice():
             print("Data from Sensor is: "+data)
             data = data[39:42]
             globalData = float(data)
-            print ('globalData: '+str(globalData))
+            print('globalData: '+str(globalData))
             print("Distance Value is: "+data)
             tempDataPoints.append(int(data))
             for item in tempDataPoints:
                 numVals+=1
             print(numVals)
 
-            if (numVals>=30):
+            if numVals>=30:
                 del tempDataPoints[0]
 
-        return (instructionCode)
+        return instructionCode
 
     #@app1.route("/firmwareupdate", methods=['GET', 'POST'])
     @app1.route("/firmwareupdate", methods=['GET', 'POST'])

@@ -1,0 +1,4 @@
+When setting up GCP compute instance
+* e2-micro chip
+* allow HTTP and HTTPS traffic
+* copy SSH key

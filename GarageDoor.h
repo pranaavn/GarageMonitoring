@@ -25,7 +25,8 @@ const char* _mailPassword = "";
 
 // Constants
 const char* FIRMWARE_VER = " GarageOS version 1.0.2";
-const char* EXTERNAL_IP_ADDRESS = "http://34.83.30.196:80/device";
+const char* EXTERNAL_IP_ADDRESS = "34.83.31.33:80";
+const char* EXTERNAL_ENDPOINT = "http://34.83.31.33:80/device";
 
 // BLE scan structures for namespace/UUID filter
   const int noOfNamespaces = 10;  // no of namesaces or UUIDs to scan for

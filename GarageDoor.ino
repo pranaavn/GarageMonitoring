@@ -36,7 +36,8 @@ String instructionCode = "";
 SoftwareSerial SoftSerial(4, 5); // receive, transmit, inverse_logic, buffer size        , false, 1536
 
 HTTPClient http;
-RestClient garageDoorRestClient = RestClient("34.83.30.196",80);
+RestClient garageDoorRestClient = RestClient(EXTERNAL_IP_ADDRESS,80);
+//RestClient garageDoorRestClient = RestClient("34.83.30.196",80);
 //RestClient garageDoorRestClient = RestClient(RESTServer, RESTPort);
 
 
@@ -99,7 +100,7 @@ void write_esp_hb() {
 }
 
 void http_ota_update() {  
-   String firmware_update_url = "http://"+String("34.83.30.196")+":"+String(80)+"/firmwareupdate"; // Use FQDN of cloud server
+   String firmware_update_url = "http://"+String(EXTERNAL_IP_ADDRESS)+":"+String(80)+"/firmwareupdate"; // Use FQDN of cloud server
    Serial.print("Updating firmware from ");
    Serial.println(firmware_update_url.c_str());
    t_httpUpdate_return ret = ESPhttpUpdate.update(firmware_update_url.c_str());
@@ -261,7 +262,7 @@ void post_to_cloud(String bleResponse) {
     //const char *c = bleResponse.c_str();
     //int statusCode = garageDoorRestClient.post("/device", bleResponse.c_str(), &resp);   //This is for 3rd Party RESTClient library
 
-    http.begin(EXTERNAL_IP_ADDRESS);
+    http.begin(EXTERNAL_ENDPOINT);
     int statusCode = http.POST(bleResponse.c_str());
     String resp = http.getString();   //Get the request response payload
     http.end();
