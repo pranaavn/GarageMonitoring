@@ -8,5 +8,6 @@ git clone https://github.com/pranaavn/GarageMonitoring nautilus
 
 4. pip3 install Flask
 
-5. Test
+5. pip3 install --upgrade pip virtualenv
 
+6. pip3 install prometheus-client

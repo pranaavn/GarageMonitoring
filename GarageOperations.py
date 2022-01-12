@@ -79,7 +79,7 @@ def webservice():
         #return app.send_static_file('GarageDoor.ino.generic.bin')
         return send_from_directory('/home/pranaavn','GarageDoor.ino.generic.bin')
 
-    app1.run(host='0.0.0.0', port = 80, threaded = True, debug = False)
+    app1.run(host='0.0.0.0', port = 5001, threaded = True, debug = False)
 
 
 
