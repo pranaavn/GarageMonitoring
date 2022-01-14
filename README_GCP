@@ -2,3 +2,9 @@ When setting up GCP compute instance
 * e2-micro chip
 * allow HTTP and HTTPS traffic
 * copy SSH key
+
+Firewalls
+* create firewall rules for port 9090 and 9091 ingress
+* create target tags to be applied to vm instance (under network tags)e
+* make base filter 0.0.0.0/0
+* Use tcp protocol and corresponding port number
