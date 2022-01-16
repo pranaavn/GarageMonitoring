@@ -1,0 +1,27 @@
+DOCKER COMMANDS
+* sudo docker build -t nautilus .
+	- build docker image with name "nautilus" using Dockerfile in current directory
+
+* sudo docker images
+	- see currently made docker images and repo names
+
+* sudo docker run nautilus
+	- run docker image corresponding to nautilus repo/image
+
+* sudo docker run nautilus &
+	- run container in background
+
+* sudo docker container ls
+	- list currently running containers
+
+* sudo docker exec -it f52d9ce4f45b bash
+	- remote cli into running container with given id
+
+* sudo docker logs f52d9ce4f45b
+	- view logs from running container with given id
+
+* sudo docker logs --follow f52d9ce4f45b
+	- view current continuous logs from running container with given id
+
+* ps -fe | grep docker
+	- view currently running processes
