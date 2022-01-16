@@ -1,3 +1,3 @@
 Flask
 prometheus-client
---upgrade pip virtualenv
+virtualenv
