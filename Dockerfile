@@ -3,7 +3,9 @@ FROM ubuntu:20.04
 WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN apt update -y
-RUN apt install python3
+RUN python -m pip install \
+	parse \
+	realpython-reader
 RUN apt install python3-pip
 RUN pip3 install -r requirements.txt
 COPY . .
