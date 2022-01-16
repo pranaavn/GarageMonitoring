@@ -12,7 +12,7 @@ RUN  apt-get install -y wget \
 
 RUN add-apt-repository universe
 RUN apt-get install -y \
-    python3.6 \
+    python3.4 \
     python3-pip
 
 RUN apt install python3-pip
