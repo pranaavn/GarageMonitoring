@@ -6,6 +6,7 @@ RUN apt update -y
 
 RUN apt-get update && apt-get install -y \
     software-properties-common
+    wget
 RUN add-apt-repository universe
 RUN apt-get update && apt-get install -y \
     python3.6 \
