@@ -7,4 +7,4 @@ RUN apt-get install -y \
     python3.4
 COPY . .
 RUN pip3 install -r requirements.txt
-CMD [ "python", "./GarageOperations.py"]
+CMD [ "python3", "./GarageOperations.py"]
