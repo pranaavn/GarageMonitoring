@@ -1,0 +1,15 @@
+INPUT:
+[Unit]
+Description=Prometheus
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+User=root
+Group=root
+Type=simple
+ExecStart=/home/pranav/prometheus/prometheus \
+    --config.file /home/pranav/prometheus/prometheus.yml \
+    --storage.tsdb.path /home/pranav/prometheus/ \
+    --web.console.templates=/home/pranav/prometheus/consoles \
+    --web.console.libraries=/home/pranav/prometheus/console_libraries
