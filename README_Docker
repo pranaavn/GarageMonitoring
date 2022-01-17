@@ -11,6 +11,14 @@ DOCKER COMMANDS
 * sudo docker run nautilus &
 	- run container in background
 
+!!!
+* sudo docker run --network=host nautilus &
+	- run container in background WITH FULL ACCESS TO HOST NETWORK
+!!!
+
+* sudo docker stop f52d9ce4f45b
+	- stop container running with given id
+
 * sudo docker container ls
 	- list currently running containers
 

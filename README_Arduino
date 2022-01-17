@@ -1,2 +1,7 @@
 CONNECTING TO SERIAL MONITOR
 * esp8266 not recognized : try new cable
+
+* curl command to simulate bluetooth ping
+
+curl -H "Content-Type:text/plain" -d "NEARBY BLE DEVICES LIST, a0e6f8319c3a -70 2 30 0201061aff4c000215D5C49A560C184D428C5716429DAD26B3ac11ce40c000" http://<ip_address>:80/devices/<customerid>/511366 -v
+
