@@ -13,7 +13,6 @@ RUN wget https://github.com/prometheus/prometheus/releases/download/v2.0.0/prome
 RUN tar xvfz prometheus-*.tar.gz
 RUN mv promservicetemplate /etc/systemd/system/prometheus.service
 
-RUN pkill -e prometheus
 RUN systemctl daemon-reload
 RUN systemctl start prometheus.service
 RUN systemctl status prometheus.service
