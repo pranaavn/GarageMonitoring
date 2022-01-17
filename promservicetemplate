@@ -8,8 +8,8 @@ After=network-online.target
 User=root
 Group=root
 Type=simple
-ExecStart=/home/pranav/prometheus/prometheus \
-    --config.file /home/pranav/prometheus/prometheus.yml \
-    --storage.tsdb.path /home/pranav/prometheus/ \
-    --web.console.templates=/home/pranav/prometheus/consoles \
-    --web.console.libraries=/home/pranav/prometheus/console_libraries
+ExecStart=/app/prometheus/prometheus \
+    --config.file /app/prometheus/prometheus.yml \
+    --storage.tsdb.path /app/prometheus/ \
+    --web.console.templates=/app/prometheus/consoles \
+    --web.console.libraries=/app/prometheus/console_libraries
