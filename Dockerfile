@@ -9,6 +9,6 @@ RUN apt-get install -y \
     python3.4
 COPY . .
 RUN pip3 install -r requirements.txt
-RUN wget 'https://github.com/prometheus/prometheus/releases/download/v2.0.0/prometheus-2.0.0.linux-am$'
+RUN wget https://github.com/prometheus/prometheus/releases/download/v2.0.0/prometheus-2.0.0.linux-amd64.tar.gz
 RUN tar xvfz prometheus-*.tar.gz
 CMD [ "python3", "./GarageOperations.py"]
