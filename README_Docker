@@ -33,3 +33,15 @@ DOCKER COMMANDS
 
 * ps -fe | grep docker
 	- view currently running processes
+
+STEPS IN NEW VM
+* clone/pull git repo
+sudo docker run --network=host nautilus &
+sudo docker run --network=host -p 9090:9090 -v /home/pranav/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml prom/prometheus &
+*
+
+--network= host makes sure the container uses same endpoint (ip address and corresponding ports)
+9090:9090 maps internal and host ports together
+paths copy local .yml prometheus config file into appropriate location in prometheus instance
+prom/prometheus runs appropriate image
+& makes sure container is run in the background when in vm
